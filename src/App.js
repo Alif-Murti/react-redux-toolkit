@@ -1,5 +1,6 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
+import Burger from "./Components/Burger/Burger";
 import counterSlice from "./store/counter";
 
 function App() {
@@ -25,6 +26,8 @@ function App() {
       >
         INCREASE BY NUMBER 10
       </button>
+      <hr />
+      <Burger />
     </div>
   );
 }
