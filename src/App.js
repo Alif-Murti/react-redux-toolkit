@@ -2,6 +2,7 @@ import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import Burger from "./Components/Burger/Burger";
 import counterSlice from "./store/counter";
+import Product from "./Components/Product/Product";
 
 function App() {
   const count = useSelector((store) => store.counter.count);
@@ -28,6 +29,8 @@ function App() {
       </button>
       <hr />
       <Burger />
+      <hr />
+      <Product />
     </div>
   );
 }
